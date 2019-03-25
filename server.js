@@ -15,25 +15,24 @@ hbs.registerHelper('getCurrentYear', () => {
     return new Date().getFullYear();
 });
 
-app.use((request, response, next) => {
-    var time = new Date().toString();
-    //console.log(`${time}: ${request.method} ${request.url}`);
-    var log = `${time}: ${request.method} ${request.url}`;
-    fs.appendFile('server.log', log + '\n', (error) => {
-        if (error) {
-            console.log('Unable to log message');
-        }
-    });
+// app.use((request, response, next) => {
+//     var time = new Date().toString();
+//     //console.log(`${time}: ${request.method} ${request.url}`);
+//     var log = `${time}: ${request.method} ${request.url}`;
+//     fs.appendFile('server.log', log + '\n', (error) => {
+//         if (error) {
+//             console.log('Unable to log message');
+//         }
+//     });
+//
+//     response.render('construction.hbs', {
+//         title: 'Maintenence',
+//         year: new Date().getFullYear(),
+//         welcome: 'Sorry for the inconvenience !'
+//     });
 
-    response.render('construction.hbs', {
-        title: 'Maintenence',
-        year: new Date().getFullYear(),
-        welcome: 'Sorry for the inconvenience !'
-    });
-
-git
     //next();
-})
+// })
 
 
 app.get('/', (request, response) => {
