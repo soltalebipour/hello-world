@@ -1,0 +1,25 @@
+{
+  "name": "week9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soltalebipour/hello-world.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soltalebipour/hello-world/issues"
+  },
+  "homepage": "https://github.com/soltalebipour/hello-world#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.0.3",
+    "request": "^2.88.0"
+  }
+}
