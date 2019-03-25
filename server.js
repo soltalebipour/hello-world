@@ -91,7 +91,7 @@ var getWind = (capital) => {
     })
 };
 
-country = "ance";
+country = "canada";
 
 getCapital(country).then((result) => {
     capital = result
