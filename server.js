@@ -1,7 +1,7 @@
 const express = require('express');
 const request = require('request');
 const hbs = require('hbs');
-const fs =  require('fs')
+const fs =  require('fs');
 
 const port = process.env.PORT || 8080;
 
